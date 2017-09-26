@@ -1,0 +1,90 @@
+﻿<!--Poco Screensaver-->
+<Window x:Class="Poco_Screensaver.Poco"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+        Title="Poco" 
+        Background="White" 
+        ResizeMode="NoResize"
+        ShowInTaskbar="False" 
+        WindowStyle="None" 
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"      
+        MouseMove="Poco_MouseMove" 
+        KeyDown="Poco_KeyDown">
+
+    <!--Text Style-->
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="./HelveticaNeueLTStd-Lt" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="100"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="LineHeight" Value="8"/>
+        </Style>
+    </Window.Resources>
+
+    <Viewbox Stretch="UniformToFill">
+        <Canvas Height="1080" Width="1920">
+            <!--Red circle animation-->
+            <Ellipse Canvas.Left="-650" Canvas.Top="-650" Fill="#E30613" Height="800" Width="800">
+                <Ellipse.Triggers>
+                    <EventTrigger RoutedEvent="Ellipse.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation From="-650" To="100" Duration="0:0:10" Storyboard.TargetProperty="(Canvas.Left)" RepeatBehavior="Forever" AutoReverse="True"/>
+                                    <DoubleAnimation From="-650" To="0" Duration="0:0:10" Storyboard.TargetProperty="(Canvas.Top)" RepeatBehavior="Forever" AutoReverse="True"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Ellipse.Triggers>
+            </Ellipse>
+
+            <!--Logo animation-->
+            <Image Source="poco.png" Canvas.Left="1950" Canvas.Top="821">
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="Image.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation From="1900" To="800" Duration="0:0:10" Storyboard.TargetProperty="(Canvas.Left)" RepeatBehavior="Forever" AutoReverse="True"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+
+            <!--Text: Your-->
+            <Viewbox Canvas.Left="217" Canvas.Top="86" Height="114" Width="583">
+                <TextBlock Text="your"/>
+            </Viewbox>
+
+            <!--Text: Discount-->
+            <Viewbox Canvas.Left="217" Canvas.Top="205" Height="102" Width="583">
+                <TextBlock Text="DISCOUNT"/>
+            </Viewbox>
+
+            <!--Text: Home-->
+            <Viewbox Canvas.Left="217" Canvas.Top="312" Height="178" Width="583">
+                <TextBlock Text="HOME" FontSize="180"/>
+            </Viewbox>
+            
+            <!--Text: Megastore-->
+            <Viewbox  Canvas.Left="217" Canvas.Top="495" Height="106" Width="583">
+                <TextBlock Text="MEGASTORE"/>
+            </Viewbox>
+            
+            <!--Right Top Yellow Circle-->
+            <Ellipse Fill="#FFE300" Height="400" Width="400" Canvas.Left="1306" Canvas.Top="42" />
+
+            <!--Middle Grey Circle-->
+            <Ellipse Fill="#9A9B9B" Opacity=".8" Height="600" Width="600" Canvas.Left="906" Canvas.Top="205"/>
+
+            <!--Bottom Yellow Circle-->
+            <Ellipse Fill="#FFEC66" Height="400" Width="400" Canvas.Left="358" Canvas.Top="821"/>
+        </Canvas>
+    </Viewbox>
+</Window>

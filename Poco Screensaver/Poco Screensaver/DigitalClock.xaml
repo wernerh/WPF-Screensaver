@@ -1,0 +1,31 @@
+﻿<Window x:Class="Poco_Screensaver.DigitalClock"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DigitalClock" 
+    Background="Black" 
+    ResizeMode="NoResize" 
+    ShowInTaskbar="False" 
+    WindowStyle="None" 
+    WindowStartupLocation="CenterScreen" 
+    WindowState="Maximized" 
+    MouseMove="DigitalClock_MouseMove" 
+    KeyDown="DigitalClock_KeyDown">
+
+    <!--Resources-->
+    <Window.Resources>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="180"/>
+            <Setter Property="FontFamily" Value="./#Digital-7 mono"/>
+        </Style>
+    </Window.Resources>
+    
+    <!--Clock-->
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Label x:Name="timeText" >
+            <Label.Effect>
+                <DropShadowEffect ShadowDepth="0" Color="GreenYellow" BlurRadius="20" />
+            </Label.Effect>
+        </Label>
+    </Grid>
+</Window>

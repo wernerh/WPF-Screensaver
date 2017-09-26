@@ -1,0 +1,17 @@
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\bin\Release\Poco Screensaver.exe.config
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\bin\Release\Poco Screensaver.exe
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\bin\Release\Poco Screensaver.pdb
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco.baml
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco.g.cs
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\App.g.cs
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver_Content.g.cs
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver_MarkupCompile.cache
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver.g.resources
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco_Screensaver.Properties.Resources.resources
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver.exe
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver.pdb
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\Poco Screensaver.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\DigitalClock.baml
+C:\Users\admin\Documents\Poco\Poco Screensaver\Poco Screensaver\obj\Release\DigitalClock.g.cs
